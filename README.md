@@ -1,4 +1,4 @@
-# iOS-keyframe-animations-and-view-transformations
+# iOS-view-transformations
 
 * This is a simple project that explains the basics of iOS view transformations. 
 * It's written in Swift 4, in Xcode version 9.3. 
