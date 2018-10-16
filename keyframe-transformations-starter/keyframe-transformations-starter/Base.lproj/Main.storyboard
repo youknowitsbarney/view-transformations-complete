@@ -1,58 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z3T-dl-mKV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Keyframe View Controller-->
-        <scene sceneID="vxK-fG-QFZ">
-            <objects>
-                <viewController id="cC2-Ut-Z4E" customClass="KeyframeViewController" customModule="keyframe_transformations_starter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0kX-W0-dpE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hb-L1-yzo">
-                                <rect key="frame" x="127" y="273" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjH-Nh-5e4">
-                                <rect key="frame" x="145" y="581" width="90" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Animate">
-                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="animate:" destination="cC2-Ut-Z4E" eventType="touchUpInside" id="crV-Tu-Gl5"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="NTh-ZN-o0k"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="It1-KB-168">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="D6Z-Hg-uo8">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="urU-SK-36G"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="blueView" destination="6hb-L1-yzo" id="Ce9-6C-GVD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QG1-zm-P3B" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="920.79999999999995" y="130.88455772113943"/>
-        </scene>
         <!--Holiday View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -146,12 +103,61 @@
                                             <action selector="toggleShareMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bj1-nS-gxx"/>
                                         </connections>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ngj-QP-s1c">
+                                        <rect key="frame" x="61" y="0.0" width="250" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEb-hI-edA">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="4PV-bD-heF"/>
+                                                    <constraint firstAttribute="height" constant="44" id="61c-pa-2tN"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button" image="twitter"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xa-T4-9OP">
+                                                <rect key="frame" x="68.5" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="YST-Kk-rb9"/>
+                                                    <constraint firstAttribute="width" constant="44" id="xNV-aU-Mxp"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button" image="tumblr"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQX-3S-Uby">
+                                                <rect key="frame" x="137.5" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="RaU-wh-vsi"/>
+                                                    <constraint firstAttribute="height" constant="44" id="hTm-kW-37v"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button" image="pinterest"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oft-ac-LOL">
+                                                <rect key="frame" x="206" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="GrP-LT-eo9"/>
+                                                    <constraint firstAttribute="height" constant="44" id="WHi-Y0-yxl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="..."/>
+                                                <connections>
+                                                    <action selector="showMoreOptions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bY-7w-Kml"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="Ngj-QP-s1c" firstAttribute="top" secondItem="stj-20-Wmq" secondAttribute="top" id="BEy-n2-FBJ"/>
                                     <constraint firstAttribute="height" constant="128" id="JBz-eM-BVm"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ngj-QP-s1c" secondAttribute="bottom" constant="84" id="R5L-UZ-M0F"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ngj-QP-s1c" secondAttribute="trailing" constant="64" id="Xgo-3t-tdp"/>
                                     <constraint firstAttribute="bottom" secondItem="VgP-ly-iVS" secondAttribute="bottom" constant="76" id="YJB-Ry-3uK"/>
                                     <constraint firstItem="VgP-ly-iVS" firstAttribute="leading" secondItem="stj-20-Wmq" secondAttribute="leading" constant="8" id="ZOl-xZ-W3m"/>
+                                    <constraint firstItem="Ngj-QP-s1c" firstAttribute="leading" secondItem="stj-20-Wmq" secondAttribute="leading" constant="61" id="pRb-kJ-e4p"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -166,35 +172,23 @@
                     <connections>
                         <outlet property="darkView" destination="VgP-ly-iVS" id="EkU-2Y-eUX"/>
                         <outlet property="menuView" destination="stj-20-Wmq" id="Ahb-Zp-3Sy"/>
+                        <outlet property="moreOptionsButton" destination="oft-ac-LOL" id="dSl-q8-Fn8"/>
+                        <outlet property="pinterestButton" destination="XQX-3S-Uby" id="o9C-FQ-Xgs"/>
                         <outlet property="shareButton" destination="xQK-tO-HIg" id="weT-d9-YV1"/>
+                        <outlet property="tumblrButton" destination="7xa-T4-9OP" id="dZP-Nd-93C"/>
+                        <outlet property="twitterButton" destination="eEb-hI-edA" id="OJT-5R-Le4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1840.8" y="130.88455772113943"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Krp-3p-aYn">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z3T-dl-mKV" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f5N-2K-h8l">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="cC2-Ut-Z4E" kind="relationship" relationship="rootViewController" id="CGK-rm-Ixp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Aj-w6-vKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-18.399999999999999" y="130.88455772113943"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="Holiday Pics" width="640" height="433"/>
-        <image name="share" width="128" height="128"/>
+        <image name="Holiday Pics" width="307.20001220703125" height="208.08000183105469"/>
+        <image name="pinterest" width="512" height="512"/>
+        <image name="share" width="256" height="256"/>
+        <image name="tumblr" width="404" height="404"/>
+        <image name="twitter" width="1200" height="1200"/>
     </resources>
 </document>
